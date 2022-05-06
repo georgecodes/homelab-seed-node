@@ -1,0 +1,9 @@
+log-queries
+no-resolv
+
+server=8.8.8.8
+{% for dns_server in dns.servers %}
+server={{ dns_server }}
+{% endfor %}
+
+address=/{{ dns.db_hostname }}/{{ dns.host_ip }}

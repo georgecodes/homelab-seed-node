@@ -1,0 +1,9 @@
+---
+db:
+  # port: 5433                 # a port other than 5432 to run postgres on - defaults tp 5432
+  datadir: ./data              # a mount for the data 
+dns:
+  host_ip: 192.168.53.30       # the ip of the host you will run this on
+  db_hostname: psql.lab.com    # the hostname you want postgres accessible at
+  servers:                     # additional dns servers you want to be queried
+    - 8.8.4.4
